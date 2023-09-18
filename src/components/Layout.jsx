@@ -53,11 +53,24 @@ function Header({ navigation }) {
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
           <Logomark className="h-9 w-9 lg:hidden" />
-          <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" />
+          <Logo className="hidden h-9 fill-slate-700 dark:fill-sky-100 lg:block" />
         </Link>
+        <div className="ml-5 font-display dark:text-slate-400">
+        <div className="ml-5">
+        <div className="ml-5">
+        <div className="ml-5">
+        <div className="ml-5">
+        { //!!!customize
+                }
+            HEADER NOTIFICATION IF ANY GOES HERE
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
-        <Search />
+        {/* <Search /> */}
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
