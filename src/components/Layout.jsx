@@ -95,8 +95,9 @@ function useTableOfContents(tableOfContents) {
     let headings = getHeadings(tableOfContents)
     function onScroll() {
       let top = window.scrollY
-      let current = headings[0].id
+      let current = headings[0]?.id
       for (let heading of headings) {
+        if (!heading) continue
         if (top >= heading.top) {
           current = heading.id
         } else {
@@ -144,7 +145,7 @@ export function Layout({ children, title, tableOfContents }) {
       {isHomePage && <Hero />}
 
       <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
-        <div className="hidden lg:relative lg:block lg:flex-none">
+        {!comingSoon && <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
           <div className="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block" />
@@ -154,7 +155,23 @@ export function Layout({ children, title, tableOfContents }) {
               className="w-64 pr-8 xl:w-72 xl:pr-16"
             />
           </div>
-        </div>
+        </div>}
+        {comingSoon &&               <header className="mb-9 space-y-1">
+        <h1 className="font-display text-center text-3xl tracking-tight text-slate-900 dark:text-white">
+        { //!!!customize
+                }
+
+            YOUR PROJECT NAME
+            <br/>
+            <br/>
+            is
+            <br/>
+            <br/>            
+            Coming Soon
+            <br/>
+            <br/>            
+            to a community near you
+        </h1></header>    ||
         <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
           <article>
             {(title || section) && (
@@ -205,8 +222,8 @@ export function Layout({ children, title, tableOfContents }) {
               </div>
             )}
           </dl>
-        </div>
-        <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
+        </div>}
+        {!comingSoon && <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
           <nav aria-labelledby="on-this-page-title" className="w-56">
             {tableOfContents.length > 0 && (
               <>
@@ -258,7 +275,7 @@ export function Layout({ children, title, tableOfContents }) {
               </>
             )}
           </nav>
-        </div>
+        </div>}
       </div>
     </>
   )
