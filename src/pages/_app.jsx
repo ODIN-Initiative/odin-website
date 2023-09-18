@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }) {
 
   let pageTitle =
     pageProps.markdoc?.frontmatter.pageTitle ||
-    `${pageProps.markdoc?.frontmatter.title} - Docs`
+    `${pageProps.markdoc?.frontmatter.title}`
 
   let description = pageProps.markdoc?.frontmatter.description
 
@@ -61,11 +61,23 @@ export default function App({ Component, pageProps }) {
     ? collectHeadings(pageProps.markdoc.content)
     : []
 
+const GA_ID = "XXXX!!!customize";
   return (
     <>
       <Head>
-        <title>{pageTitle}</title>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id={GA_ID}`}></script>
+        <script type='text/javascript' children={`
+        if (typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments)}
+            gtag('js', new Date());
+
+            gtag('config', '${GA_ID}');
+        } 
+            `} />
+    <title>{pageTitle}</title>
         {description && <meta name="description" content={description} />}
+
       </Head>
       <Layout title={title} tableOfContents={tableOfContents}>
         <Component {...pageProps} />
