@@ -4,3 +4,7 @@
 @import './prism.css';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.dark .callout strong {
+    --tw-prose-bold: #00afe6;
+}
