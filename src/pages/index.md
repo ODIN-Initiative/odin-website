@@ -8,10 +8,10 @@ description: Social governance for innovating, collaborating and making decentra
 
 {% quick-links %}
 
-{% quick-link title="Link 1" icon="lightbulb" href="/page1" description="description of the content" /%}
+{% quick-link title="Book Club" icon="lightbulb" href="/subdir/page1" description="Join our Book Club" /%}
 
-{% quick-link title="Link 2" icon="installation" href="/page2" description="another description" /%}
+{% quick-link title="Study Group" icon="installation" href="/subdir/page2" description="Learn social governance patterns" /%}
 
-{% quick-link title="Link3" icon="presets" href="/page3" description="add as many links as you like" /%}
+{% quick-link title="Community Meeting" icon="presets" href="/subdir/page3" description="Learn how to be part of ODIN" /%}
 
 {% /quick-links %}

@@ -1,15 +1,33 @@
 ---
-title: In-Page title !!!customize
-pageTitle: Tab Title  !!!customize
-description: SEO / document HEAD description
+title: Study Group
+pageTitle: Study Group
+description: Study Group
 ---
-!!!customize page sub-heading
+
+Study Group
 
 ---
 
-## First content header
+## Join our study group
 
 A short paragraph introducing the material
 
-Use TEMPLATE.md for a better start
+### Schedule
 
+Paragraph content?
+
+### Patterns
+
+-   item 1
+-   item 2
+-   item 3
+
+## Learn more
+
+{% quick-links %}
+
+{% quick-link title="Book Club" icon="lightbulb" href="/subdir/page1" description="Join our Book Club" /%}
+
+{% quick-link title="Community Meeting" icon="presets" href="/subdir/page3" description="Learn how to be part of ODIN" /%}
+
+{% /quick-links %}
