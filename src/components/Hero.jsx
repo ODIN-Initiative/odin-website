@@ -55,12 +55,12 @@ export function Hero() {
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
               { //!!!customize
                 }
-                Your Great Hero Title Here
+                Open Decentralized Innovation Network
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
               { //!!!customize
                 }
-                Big tagline to inspire deeper engagement
+                Collaborative Impact Innovation
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 <Button href="/docs/starting/installation">Get started</Button>

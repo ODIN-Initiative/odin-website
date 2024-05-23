@@ -20,10 +20,10 @@ export function Logo(props) {
     <svg aria-hidden="true" viewBox="0 0 280 50" fill="none" {...props}>
       <LogomarkPaths />
       <text x="38.8" y="25.5" fill="#ffffff" fontWeight="bold" fontSize="x-large">
-        Proj Name {/* !!!customize */}
+        ODIN Logo Title {/* !!!customize */}
       </text>
       <text x="38.8" y="45.5" fill="#ffffff" fontWeight="bold" fontSize="small">
-        Subheading text {/* !!!customize */}
+        Collaborative Impact Innovation {/* !!!customize */}
       </text>
     </svg>
   )

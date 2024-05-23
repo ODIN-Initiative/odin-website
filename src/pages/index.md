@@ -1,9 +1,17 @@
 ---
-title: In-Page title !!!customize
-pageTitle: Tab Title  !!!customize
-description: SEO / document HEAD description
+title: ODIN
+pageTitle: ODIN - The Innovators' Innovation Network
+description: Social governance for innovating, collaborating and making decentralized impact
 ---
 
-stuff!!
+## The Innovators' Innovation Network
 
-Use TEMPLATE.md for a better start
+{% quick-links %}
+
+{% quick-link title="Link 1" icon="lightbulb" href="/page1" description="description of the content" /%}
+
+{% quick-link title="Link 2" icon="installation" href="/page2" description="another description" /%}
+
+{% quick-link title="Link3" icon="presets" href="/page3" description="add as many links as you like" /%}
+
+{% /quick-links %}
