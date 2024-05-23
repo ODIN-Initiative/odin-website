@@ -7,17 +7,25 @@ export const navigation = [
         ],
     },
     {
-        title: "Header 1",
+        title: "Applied research",
         links: [
-            { title: "link1", href: "/page1" },
-            { title: "link2", href: "/subdir/page2" },
+            {
+                title: "$DEMU: Impactful social community governance with ODIN",
+                href: "https://cardano.ideascale.com/c/idea/122835",
+            },
+            {
+                title: "Organizational habits and Principles: The Governance and Collaboration Study Group",
+                href: "https://cardano.ideascale.com/c/idea/122606",
+            },
         ],
     },
     {
-        title: "Header 2",
+        title: "Consultancy services",
         links: [
-            { title: "link3", href: "/page3" },
-            { title: "link4", href: "/page4" },
+            {
+                title: "ODIN - Mentors Network to increase success of funded proposals",
+                href: "https://cardano.ideascale.com/c/idea/122566",
+            },
         ],
     },
 ]
